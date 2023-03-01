@@ -59,7 +59,7 @@ function displayData(data) {
     <div class='details_nav'>
        <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-             <li class="breadcrumb-item text-reset fw-bold"><a href="./dashboard.html">Home</a></li>
+             <li class="breadcrumb-item text-reset fw-bold"><a href="#" onclick='goHome()'>Home</a></li>
              <li class="breadcrumb-item fw-bold" aria-current="page">${data.title}</li>
           </ol>
        </nav>
@@ -166,6 +166,10 @@ function displayData(data) {
 function show(){
   document.getElementById('hiddenParrafo').style.display = 'block';  
   document.getElementById('showBtn').style.display='none';
+}
+
+function goHome(){
+  window.location.href='./dashBoard.html'
 }
 
 // documentHTML.getElementById('showBtn').addEventListener('click',function(){
