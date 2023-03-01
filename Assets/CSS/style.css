@@ -1,0 +1,380 @@
+/************************************************Theme Customize*************************************/
+[data-theme="dark"] {
+  --main-color: #010101;
+  --second-color: #B44220;
+  --color-text: #fff;
+  --btn-main-color: #F32A38; 
+}
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --second-color: #F7941D;
+  --color-text: #010101;
+  --btn-main-color: #77F82A;
+}
+
+.main-btn {
+  /* border:1px solid red; */
+  background-color: var(--btn-main-color);
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.btn{
+  background-color: var(--btn-main-color);
+  color: var(--color-text);
+}
+
+.btn:hover{
+  color: var(--color-text);
+}
+
+.main-btn:hover {
+  /*background: linear-gradient(rgba(0 0 0 / 0.99), rgb(0 0 0 / 0.89));*/
+  filter:grayscale(0.5);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: var(--main-color);
+  color: var(--color-text);
+  border-color: var(--second-color);
+}
+
+.form-control::placeholder {
+  color: var(--color-text);
+}
+
+.badge-color {
+  background-color: var(--btn-main-color);
+}
+
+
+
+/***************************************************Fixed Button**************************************/
+.fa-solid{
+  z-index: 10;
+}
+/*****************************************************************************************************/
+
+/*************************************Global Configurations ******************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Genos", sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  color: var(--color-text) !important;
+}
+
+a,
+p,
+span {
+  color: inherit !important;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  display: none;
+}
+
+.login .login-area,
+.register .register-area {
+  background-color: rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--second-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+/***************************************************************************************************************/
+
+/************************************************ Login ********************************************************/
+.login .image { 
+  background: url("../Images/game-logo.jpg") center / cover no-repeat;
+  min-height: 100%;
+}
+
+header img{
+  width:10%;
+}
+
+/* .login #toggler {
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  transform: translateY(-30%);
+  color:var(--color-text);
+  cursor: pointer;
+} */
+
+/***************************************************************************************************************/
+
+/*********************************************** Register ******************************************************/
+
+.register .image {
+  background: url("../Images/game-logo-bg.jpg") center / cover no-repeat;
+  min-height: 100%;
+}
+
+/* :is(input):target ~ span {
+  top: 25%;
+  /* border:1px solid red; 
+}  */
+
+#toggler{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  transform: translateY(-25%);
+  color:var(--color-text);
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* :is(input):focus ~ span  i,
+:is(input):not(:placeholder-shown) ~ span i,
+:is(input):target ~ span i  {
+/* margin:0; */
+
+  /* transform: translateY(-80%) ; 
+} */
+
+
+ /* .position-relative .is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
+  display: inline-block;
+  background-color: transparent;
+}  */
+
+/****************************************************************************************************************/
+
+/********************************************** DashBoard *******************************************************/
+
+.nav-bg {
+  background-color: var(--main-color);
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: rgb(255, 92, 1) !important;
+  transition: color 0.5s;
+}
+
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgb(220 220 220 / 25%);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 92, 1, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.home .card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.home .card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+
+  width: auto;
+  height: auto;
+}
+/***************************************************************************************************************/
+
+/************************************************** Details ***************************************************/
+.details {
+  background-color: #272729be;
+  /* backdrop-filter: blur(4px); */
+}
+
+.list-group-item{
+  border:none;
+}
+
+.breadcrumb li{
+  color:var(--second-color);
+}
+
+.details__list li h6, #detailsData h3{
+  color:var(--second-color) !important;
+}
+
+.details__list li p{
+  color:var(--color-text) !important;
+}
+
+#showBtn{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/**************************************************************************************************************/
+
+/************************************************** Loader ****************************************************/
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: var(--main-color)!important;
+  /* background-color: #272b30e3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  height: 5px;
+  width: 5px;
+  color: var(--btn-main-color)!important;
+  box-shadow: -10px -10px 0 5px,
+              -10px -10px 0 5px,
+              -10px -10px 0 5px,
+              -10px -10px 0 5px;
+  animation: loader-38 6s infinite;
+}
+
+@keyframes loader-38 {
+  0% {
+    box-shadow: -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px;
+  }
+  8.33% {
+    box-shadow: -10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px -10px 0 5px;
+  }
+  16.66% {
+    box-shadow: -10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px 10px 0 5px,
+                10px 10px 0 5px;
+  }
+  24.99% {
+    box-shadow: -10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  33.32% {
+    box-shadow: -10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px 10px 0 5px,
+                -10px -10px 0 5px;
+  }
+  41.65% {
+    box-shadow: 10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px 10px 0 5px,
+                10px -10px 0 5px;
+  }
+  49.98% {
+    box-shadow: 10px 10px 0 5px,
+              10px 10px 0 5px,
+              10px 10px 0 5px,
+              10px 10px 0 5px;
+  }
+  58.31% {
+    box-shadow: -10px 10px 0 5px,
+                -10px 10px 0 5px,
+                10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  66.64% {
+    box-shadow: -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  74.97% {
+    box-shadow: -10px -10px 0 5px,
+                10px -10px 0 5px,
+                10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  83.3% {
+    box-shadow: -10px -10px 0 5px,
+                10px 10px 0 5px,
+                10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  91.63% {
+    box-shadow: -10px -10px 0 5px,
+                -10px 10px 0 5px,
+                -10px 10px 0 5px,
+                -10px 10px 0 5px;
+  }
+  100% {
+    box-shadow: -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px,
+                -10px -10px 0 5px;
+  }
+}
+
+/***********************************************************************************************/
+
+/*******************************************RWD Section*****************************************/
+
+@media screen and (max-width: 1399.9808px) {}
+
+@media screen and (max-width: 1199.9808px) {}
+
+@media screen and (max-width: 991.9808px) { 
+}
+
+@media screen and (max-width: 767.9808px) {
+}
+
+@media screen and (max-width: 575.9808px) {
+}
+
+@media screen and (max-width: 425.9808px) {
+
+}
+/**************************************************************************************************/

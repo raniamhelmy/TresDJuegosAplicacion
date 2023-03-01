@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+     <!----------------------------- Authorization script ------------------------------->
+
+     <script src="./Assets/JS/auth.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="2D Juegos Website" />
+    <meta name="keywords" content="2D Juegos , 2D Gaming , موقع العاب " />
+    <meta name="author" content="RANIA M. HELMY" />
+
+    <!---------------------------Fonts used in this App------------------------------------------------------>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--------------------------------Style Files ------------------------------------------>
+    <link
+      rel="stylesheet"
+      href="./Assets/CSS/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" type="text/css" />
+
+    <!------------------------------WebSite Title ------------------------------------------>
+
+    <title>3D Juegos | Juegos Multijugador Online Aplicacion Template</title>
+
+    <!-------------------------------Browser logo------------------------------------------->
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="https://img.freepik.com/premium-vector/fox-s-head-sport-mascot-logo-design_119810-745.jpg?w=360"
+    />
+  </head>
+
+
+  <body>
+
+    <!-- fixed switch button -->
+   <!-- <i class="fa-solid fa-moon fa-xl fa-beat p-3"></i> -->
+
+   <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-solid fa-sun fa-xl fa-beat p-3"></i>
+   </span>
+
+    <nav class="navbar navbar-expand-lg nav-bg border-bottom border-dark">
+        <div class="container">
+            <h5 class="navbar-brand mb-0 text-uppercase">
+                <a href="./dashBoard.html" class="text-decoration-none text-reset fw-bold"><img src="./Assets/Images/game-logo-small.jpg" alt="logo photo" style="max-width: 40px" /> 2D Juegos</a>
+             </h5>
+           <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+           >
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
+                 <li class="nav-item">
+                    <a role="button" class="nav-link active text-uppercase" aria-current="page" data-category="mmorpg"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> mmorpg</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="shooter"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> shooter</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="sailing"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> sailing</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="permadeath"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> permadeath</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="superhero"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> superhero</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="pixel"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> pixel</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="pvp"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> pvp</a>
+                 </li>
+                 <li class="nav-item">
+                    <a role="button" class="nav-link text-uppercase" data-category="action"><i class=" my-0 py-0 fa-md fa-solid fa-gamepad"></i> action</a>
+                 </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                 <li class="nav-item" id='LogOutBtn'>
+                    <span role="button" class="nav-link logout-btn">LogOut</span>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+
+     <main class="container my-3 home">
+        <h1 class="h4 mb-4">Top Free Moba Games For PCs And Browsers In 2023!</h1>
+        <section class="position-relative">
+           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+
+           <div class="loading d-none">
+              <span class="loader"></span>
+           </div>
+        </section>
+     </main>
+
+
+     <!----------------------------- JQuery script ------------------------------->
+
+    <!-- <script src="./Assets/JS/jquery-3.6.3.min.js"></script> -->
+   
+
+    <!----------------------------- Bootstrap script ------------------------------->
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!----------------------------- My script ------------------------------->
+
+    <script src="./Assets/JS/dashBoard.js"></script>
+  </body>
+</html>

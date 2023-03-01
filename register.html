@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="2D Juegos Website" />
+    <meta name="keywords" content="2D Juegos , 2D Gaming , موقع العاب " />
+    <meta name="author" content="RANIA M. HELMY" />
+
+    <!---------------------------Fonts used in this App------------------------------------------------------>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--------------------------------Style Files ------------------------------------------>
+    <link
+      rel="stylesheet"
+      href="./Assets/CSS/bootstrap.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" type="text/css" />
+
+    <!------------------------------WebSite Title ------------------------------------------>
+
+    <title>3D Juegos | Juegos Multijugador Online Aplicacion Template</title>
+
+    <!-------------------------------Browser logo------------------------------------------->
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="https://img.freepik.com/premium-vector/fox-s-head-sport-mascot-logo-design_119810-745.jpg?w=360"
+    />
+  </head>
+
+  <body>
+    <!-- fixed switch button -->
+
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-solid fa-sun fa-xl fa-beat p-3"></i>
+    </span>
+
+    <main
+      class="container register min-vh-100 my-lg-0 my-3 d-flex justify-content-center align-items-center"
+    >
+      <section class="register-area shadow w-100 rounded overflow-hidden">
+        <div class="row g-0">
+          <div class="col-lg-5 d-none d-md-block">
+            <div class="image"></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="p-4">
+              <header class="text-center">
+                <img
+                  class="d-block rounded-circle mx-auto"
+                  src="./Assets/images/game-logo-small.jpg"
+                  alt="logo game over"
+                />
+                <h1 class="mt-3">Register</h1>
+              </header>
+
+              <form class="row g-3 my-4" id="registerForm">
+                <div class="col-md-6">
+                  <div class="form-data">
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>First Name Is Required</li>
+                      <li>Minimum Length 2 and Maximum 20</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-data">
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>Last Name Is Required</li>
+                      <li>Minimum Length 2 and Maximum 20</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>Email Is Required</li>
+                      <li>InValid Email Formate</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="text"
+                      id="uname"
+                      class="form-control"
+                      placeholder="Username"
+                    />
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>Username Is Required</li>
+                      <li>Minimum Length 3 and Maximum 15</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data position-relative">
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Password"
+                    />
+                    <span
+                      ><i id="toggler" class="fa-regular fa-eye-slash"></i
+                    ></span>
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>Password Is Required</li>
+                      <li>
+                        Minimum eight characters, at least one letter and one
+                        number
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-data">
+                    <input
+                      type="number"
+                      id="age"
+                      class="form-control"
+                      placeholder="Enter Age"
+                    />
+                    <ul class="alert alert-danger p-0 invalid-feedback">
+                      <li>Age Is Required</li>
+                      <li>Minimum 10 Maximum 80</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    disabled="type"
+                    type="submit"
+                    class="btn w-100 main-btn"
+                    id="registerBtn"
+                  >
+                    Register
+                  </button>
+                  <p id="msg" class="text-center"></p>
+                </div>
+              </form>
+
+              <footer>
+                <p class="text-center small">
+                  Already a member?
+                  <a
+                    href="./index.html"
+                    class="link-secondary text-decoration-none"
+                    role="button"
+                    >LogIn <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!----------------------------- Bootstrap script ------------------------------->
+
+    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+
+    <!----------------------------- My script ------------------------------->
+
+    <script src="./Assets/JS/register.js"></script>
+  </body>
+</html>

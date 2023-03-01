@@ -1,0 +1,188 @@
+/******************************************Home Styling****************************************/
+/***************SideBar****************/
+.sideBar {
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  font-family: inherit;
+}
+
+.bottomBar{
+    z-index: 1; 
+}
+
+.bottomBarList{
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    justify-content: space-evenly;  
+}
+
+.links__container .siteName {
+  font-size: calc(18px + 2.3vw);
+  margin-block: 1.5rem;
+}
+
+.list__items {
+  padding-left: 0;
+  padding-block: 0.625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.list__item {
+  width: 100%;
+  text-align: start;
+  padding-block: 0.5rem;
+  padding-left: 1rem;
+  transition: background 400ms linear;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  background-color: var(--body__bgColor);
+}
+
+.list__item span {
+  margin-left: 15px;
+}
+
+/**********Main Container*************/
+
+.main__container {
+  margin-left: 27.5%;
+  max-width: 70%;
+}
+
+.info__container a {
+  padding: 3px 5px;
+  background-color: #eee;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.info__container i {
+  cursor: pointer;
+}
+
+.follow__desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+}
+
+.desc__container p {
+  padding: 0;
+  margin: 0;
+}
+
+.slider__container img, #close-btn, #left-btn,
+#right-btn  {
+    cursor: pointer;
+}
+
+/*********fixed-box*************/
+
+#fixed-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+#parent {
+  width: 40%;
+  background-color: teal;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#left-btn,
+#right-btn {
+  position: absolute;
+  top: 50%;
+}
+
+#left-btn {
+  left: 20px;
+}
+#right-btn {
+  right: 20px;
+}
+
+#maincontainer {
+  background-color: green;
+  width: 500px;
+  height: 500px;
+}
+#parentcontainer {
+  background-color: tomato;
+  width: 300px;
+  height: 300px;
+}
+#childcontainer {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+/*******************************************RWD Section*****************************************/
+
+/* @media screen and (min-width: 575.9808px) {
+    .bottomBar{
+        display: none;
+    }
+} */
+@media screen and (max-width: 1399.9808px) {
+}
+
+@media screen and (max-width: 1199.9808px) {
+}
+
+@media screen and (max-width: 991.9808px) {
+}
+
+@media screen and (max-width: 767.9808px) {
+  .list__item span {
+    display: none;
+  }
+  .list__item {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 575.9808px) {
+  .sideBar {
+    display: none;
+  }
+  .main__container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .bottomBar{
+       display:block;
+  }
+}
+
+@media screen and (max-width: 425.9808px) {
+}
+/**************************************************************************************************/
