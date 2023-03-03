@@ -34,7 +34,7 @@ async function getGameDetails(id) {
   );
   const response = await api.json();
   displayData(response);
-  console.log(response);
+  //console.log(response);
   loading.classList.add("d-none");
 }
 
@@ -172,30 +172,6 @@ function goHome(){
   window.location.href='./dashBoard.html'
 }
 
-// documentHTML.getElementById('showBtn').addEventListener('click',function(){
-//   show(documentHTML.getElementById('example1'))
-// })
-
-
-
-// function scrollFixNav() {
-//   if (scrollY > 0) {
-//     documentHTML.querySelector("nav").classList.add("fixed-top");
-//     if (theme === "light") {
-//       documentHTML.querySelector("nav").style.backgroundColor = "#d1d1d1";
-//     } else {
-//       documentHTML.querySelector("nav").style.backgroundColor = "#783d11";
-//     }
-//   } else {
-//     documentHTML.querySelector("nav").classList.remove("fixed-top");
-//     documentHTML.querySelector("nav").style.backgroundColor = "#000";
-//   }
-// }
-
-// function logout() {
-//   localStorage.removeItem("uToken");
-//   location.href = "./index.html";
-// }
 
 /*****************************Local Storage******************************** */
 
@@ -239,22 +215,6 @@ documentHTML.addEventListener("DOMContentLoaded", function () {
   getGameDetails(id);
   themeConfiguration();
 });
-
-// LogOutBtn.addEventListener("click", function () {
-//   logout();
-// });
-
-// menuLink.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     document.querySelector(".menu .active").classList.remove("active");
-//     e.target.classList.add("active");
-//     getGamesData(e.target.dataset.category);
-//   });
-// });
-
-// window.addEventListener("scroll", function () {
-//   scrollFixNav();
-// });
 
 modeBtn.addEventListener("click", function (e) {
   themeToggle(e.target);

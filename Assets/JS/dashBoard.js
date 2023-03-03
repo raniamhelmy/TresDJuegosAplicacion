@@ -28,7 +28,7 @@ async function getGamesData(category) {
     options
   );
   const response = await api.json();
-  console.log(response);
+  //console.log(response);
   displayData(response);
   loading.classList.add("d-none");
 }
