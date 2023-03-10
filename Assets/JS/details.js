@@ -13,6 +13,8 @@ const LogOutBtn = documentHTML.getElementById("LogOutBtn");
 
 const modeBtn = documentHTML.getElementById("mode");
 
+const closeBtn =documentHTML.getElementById('closeBtn');
+
 // let theme = "dark";
 
 /***************************Functions**************************************** */
@@ -48,7 +50,7 @@ function displayData(data) {
   // console.log(getString);
   // console.log(newArr);
   let detailsBox = `
-    
+  
     <div class="col-md-4">
     <figure>
        <img src="${data.thumbnail}" class="w-100" alt="details image" />
@@ -220,3 +222,6 @@ modeBtn.addEventListener("click", function (e) {
   themeToggle(e.target);
 });
 
+closeBtn.addEventListener("click", function () {
+  goHome();
+});

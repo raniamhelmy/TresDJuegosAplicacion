@@ -135,7 +135,7 @@ function logout() {
 function themeConfiguration() {
   if (localStorage.getItem("theme")) {
      const theme = localStorage.getItem("theme");
-     console.log(theme);
+     //console.log(theme);
      document.documentElement.dataset.theme = localStorage.getItem("theme");
      if (theme === "light") {
         modeBtn.classList.replace("fa-sun", "fa-moon");
